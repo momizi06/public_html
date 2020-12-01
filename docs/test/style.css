@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p&family=M+PLUS+Rounded+1c:wght@100&family=Noto+Sans+JP:wght@700&display=swap');
+
+#main, #list {
+  color: #444444;
+  font-family: 'M PLUS 1p', sans-serif;
+}
+
+
+h1, h2, h3 {
+font-family: 'Noto Sans JP', sans-serif;
+}
+
+code {
+font-family: 'M PLUS Rounded 1c', sans-serif;
+}
