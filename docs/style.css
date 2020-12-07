@@ -13,3 +13,12 @@ font-family: 'Noto Sans JP', sans-serif;
 code {
 font-family: 'M PLUS Rounded 1c', sans-serif;
 }
+
+table {
+  border-collapse: collapse;
+  border: solid 2px orange;
+}
+
+table th, table td {
+  border: dashed 1px orange;
+}
