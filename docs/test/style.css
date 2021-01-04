@@ -1,0 +1,31 @@
+@media screen and (min-width: 481px)
+{
+
+#test {
+  color: gray;
+}
+
+}
+
+@media screen and (max-width: 480px)
+{
+#top_btn
+{
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  
+  border-radius: 6px;
+  padding: 6px 3px;
+}
+
+
+#test {
+  color: black;
+}
+
+}
+
+#aiueo {
+font-size: 100px;
+}
