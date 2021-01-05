@@ -14,7 +14,7 @@
   z-index: 3;
 }
 .overlay::after {
-  content: "この部分をクリックで閉まる";
+  content: "";
   visibility: hidden;
   position: fixed;
   top: 40%;
