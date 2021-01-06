@@ -6,22 +6,19 @@
   <title>jquery_test</title>
   <link rel="stylesheet" href="style.css" />
 
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="script.js"></script>
-
-
 
 </head>
 <body>
 
 
-<body>
-  <!-- サイドオープン時メインコンテンツを覆う -->
-  <div class="overlay" id="js__overlay"></div>
+<!--<button id="top_btn">記事トップ</button>-->
 
-  <!-- サイドメニュー -->
-  <nav class="side-menu">
-    <ul>
+<div id="navArea">
+
+  <nav>
+    <div class="inner">
+      <ul>
+      <p>目次</p>
       <li><a href="#現代社会">現代社会</a></li>
       <li><a href="#化学基礎">化学基礎</a></li>
       <li><a href="#地学基礎">地学基礎</a></li>
@@ -29,11 +26,23 @@
       <li><a href="#数学A">数学A</a></li>
       <li><a href="#CEⅠ">CEⅠ</a></li>
       <li><a href="#国語総合">国語総合</a></li>
-    </ul>
+      </ul>
+    </div>
   </nav>
 
-  <!-- 開閉用ボタン -->
-  <div class="side-menu-btn" id="js__sideMenuBtn"></div>
+  <div class="toggle_btn">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <div id="mask"></div>
+
+</div>
+
+
+
+
 
   <!-- メインコンテンツ -->
   <div class="wrapper">
@@ -43,15 +52,13 @@
     </header>
 
 
-    <main class="contents">
+    <main>
 
 
       <section class="contents__inner">
-  
 
 <h3 id="現代社会">現代社会</h3>
 <p>教科書 <b>p.68〜109</b></p>
-
       </section>
 
 
@@ -64,7 +71,6 @@
 
 
       <section class="contents__inner">
-      
 
 <h3 id="地学基礎">地学基礎</h3>
 <table summary="地学の範囲" border="1">
@@ -77,7 +83,7 @@
     <tr>
 
 
-      <th id="t1"></th>
+      <th class="fixed02" id="t1"></th>
 
       <th id="t2" abbr="火山と火成岩">火山と火成岩</th>
 
@@ -93,12 +99,12 @@
 
   <tbody>
 
-    <tr><td headers="t1">教科書</td>
+    <tr><td class="fixed01" headers="t1">教科書</td>
     <td headers="t2">p.22,37~48,55</td>
     <td headers="t3">p.214,215</td>
     <td headers="t4">p.108~116,126~130,144,146,147</td></tr>
 
-    <tr><td headers="t1">図説</td>
+    <tr><td class="fixed01" headers="t1">図説</td>
     <td headers="t2">p.66~81,206~209</td>
     <td headers="t3">p.200~203</td>
     <td headers="t4">p.144~147,152~156,158,160</td></tr>
@@ -106,22 +112,25 @@
   </tbody>
 </table>
 <b>火山〜地震災害〜フェーン現象</b>
-
-
       </section>
+
+
       <section class="contents__inner">
         
 <h3 id="数学Ⅰ">数学Ⅰ</h3>
 <p>教科書 <b>p.109〜124,126〜142</b><br>
 <b>二次不等式〜三角比の正弦余弦前</b></p>
       </section>
+
+
       <section class="contents__inner">
-  
 
 <h3 id="数学A">数学A</h3>
 <p>教科書 <b>p.140〜162,72〜82</b><br>
 Focus <b>p.455〜549</b></p>
       </section>
+
+
       <section class="contents__inner">
         
 <h3 id="CEⅠ">CEⅠ</h3>
@@ -129,6 +138,8 @@ Focus <b>p.455〜549</b></p>
 ワークブック<b>l.6〜7,FR2</b><br>
 Evergreen <b>関係詞,仮定法</b></p>
       </section>
+
+
       <section class="contents__inner">
 
 
@@ -162,24 +173,25 @@ Evergreen <b>関係詞,仮定法</b></p>
 
     <td headers="t2">p.44~49,144~146</td>
     <td headers="t3">p.156~161,174~177,<br>186~187,190~191</td></tr>
-   
-
 
   </tbody>
 </table>
 
       </section>
-  
+
+
     </main>
+
     <footer class="footer">
       <p>このサイトはテスト用です。</p>
     </footer>
   </div>
 
+  <!--<script src="img/jquery.min.js"></script>-->
 
 
-
-
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="script.js"></script>
 
 
 </body>
