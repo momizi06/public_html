@@ -16,17 +16,6 @@ main p {
 }
 
 
-#top_btn
-{
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-  
-  border-radius: 6px;
-  padding: 6px 3px;
-  z-index: 3;
-
-}
 
 /* スマホ用 */
 @media screen and (max-width: 480px)
@@ -242,9 +231,6 @@ font-size: 15px;
   background: #fff;
 }
 
-#top_btn {
-  display: none;
-}
 
 }
 
@@ -329,3 +315,17 @@ font-family: 'M PLUS Rounded 1c', sans-serif;
 
 
 /* メインコンテンツ内のスタイル ※デザインに併せて適当に */
+
+
+
+#top_btn
+{
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  
+  border-radius: 6px;
+  padding: 6px 3px;
+  z-index: 3;
+
+}
