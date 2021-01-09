@@ -231,6 +231,9 @@ font-size: 15px;
   background: #fff;
 }
 
+#top_btn {
+  display: none;
+}
 
 }
 
