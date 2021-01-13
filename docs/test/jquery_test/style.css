@@ -2,21 +2,21 @@
   font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 700;
-  src: url("../font/NotoSansJP-Bold.woff");
+  src: url("https://raw.githubusercontent.com/momizi06/public_html/blob/working/font/NotoSansJP-Bold.woff");
 }
 
 @font-face {
   font-family: 'M PLUS 1p';
   font-style: normal;
   font-weight: 400;
-  src: url("https://github.com/momizi06/public_html/blob/working/font/MPLUS1p-Regular.woff?raw=true");
+  src: url("https://raw.githubusercontent.com/momizi06/public_html/blob/working/font/MPLUS1p-Regular.woff");
 }
 
 @font-face {
   font-family: 'M PLUS Rounded 1c';
   font-style: normal;
   font-weight: 100;
-  src: url("https://github.com/momizi06/public_html/blob/working/font/MPLUSRounded1c-Thin.woff?raw=true");
+  src: url("https://raw.githubusercontent.com/momizi06/public_html/blob/working/font/MPLUSRounded1c-Thin.woff");
 }
 
 
