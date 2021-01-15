@@ -2,7 +2,7 @@
   font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 700;
-  src: url("https://raw.githubusercontent.com/momizi06/public_html/working/font/NotoSansJP-Bold.woff") format('woff');
+  src: url("https://raw.githubusercontent.com/momizi06/public_html/main/font/NotoSansJP-Bold.woff") format('woff');
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: 'M PLUS 1p';
   font-style: normal;
   font-weight: 400;
-  src: url("https://raw.githubusercontent.com/momizi06/public_html/working/font/MPLUS1p-Regular.woff") format('woff');
+  src: url("https://raw.githubusercontent.com/momizi06/public_html/main/font/MPLUS1p-Regular.woff") format('woff');
   font-display: swap;
 }
 
@@ -18,7 +18,7 @@
   font-family: 'M PLUS Rounded 1c';
   font-style: normal;
   font-weight: 100;
-  src: url("https://raw.githubusercontent.com/momizi06/public_html/working/font/MPLUSRounded1c-Thin.woff") format('woff');
+  src: url("https://raw.githubusercontent.com/momizi06/public_html/main/font/MPLUSRounded1c-Thin.woff") format('woff');
   font-display: swap;
 }
 
