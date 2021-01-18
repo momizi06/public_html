@@ -7,10 +7,10 @@
   $btn.on( 'click', function() {
     if ( ! $nav.hasClass( open ) ) {
       $nav.addClass( open );
-      $("#top_btn").fadeOut();
+   // $("#top_btn").fadeOut();
     } else {
       $nav.removeClass( open );
-      $("#top_btn").fadeIn();
+   // $("#top_btn").fadeIn();
     }
   });
   // mask close
@@ -25,13 +25,3 @@ $(function(){
     $("html, body").animate({scrollTop: 0 }, 1000, "swing");
   });
 });
-
-
-/*==========
-作成中
-$(function () {
-    $btn.on('click', () => {
-        $("#top_btn").hide('slow');
-    });
-});
-==========*/
