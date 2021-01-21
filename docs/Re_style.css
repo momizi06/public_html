@@ -1,0 +1,58 @@
+@font-face {
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 700;
+  src: url("https://raw.githubusercontent.com/momizi06/public_html/main/font/NotoSansJP-Bold.woff") format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'M PLUS 1p';
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://raw.githubusercontent.com/momizi06/public_html/main/font/MPLUS1p-Regular.woff") format('woff');
+  font-display: swap;
+}
+
+
+:root {
+  --main-cl: #444444;
+  --body-bg: #fff;
+  --main-bg: #f5f5f5;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main-cl: #ddd;
+    --body-bg: #000;
+    --main-bg: #222;
+  }
+}
+
+
+body {
+  background: var(--body-bg);
+}
+
+main {
+  width: 100%;
+  padding: 25px 0;
+  background: var(--main-bg);
+  color: var(--main-cl);
+  font-family: 'M PLUS 1p', sans-serif;
+}
+
+h3 {
+  font-family: 'Noto Sans JP', sans-serif;
+  padding: 25px 0;
+}
+
+
+#bbtn {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  color: var(--main-cl);
+  border-radius: 6px;
+  padding: 6px 3px;
+  z-index: 3;
+}
