@@ -24,6 +24,7 @@
 
 :root {
   --main-cl: #444444;
+  --foot-cl: #666;
   --body-bg: #fff;
   --main-bg: #f5f5f5;
   --foot-bg: #fff;
@@ -35,6 +36,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --main-cl: #ddd;
+    --foot-cl: #888;
     --body-bg: #000;
     --main-bg: #222;
     --foot-bg: #111;
@@ -88,15 +90,23 @@ main p {
 }
 
 .header code {
-font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
 .footer {
   padding: 100px 0;
   background: var(--foot-bg);
-  color: var(--main-cl);
+  font-family: 'M PLUS 1p';
+}
+.footer a,
+.footer a:visited {
+  color: var(--foot-cl);
+  text-decoration: none;
 }
 
+.sigure {
+  margin-right: 30px;
+}
 
 /* スマホ用 */
 @media screen and (max-width: 480px) {
