@@ -76,6 +76,7 @@ main p {
   bottom: 10px;
   right: 10px;
   border-radius: 6px;
+  color: var(--main-cl);
   padding: 6px 3px;
   z-index: 3;
 }
