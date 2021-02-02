@@ -99,7 +99,9 @@ main p {
   font-family: 'M PLUS 1p';
 }
 .footer a,
-.footer a:visited {
+.footer a:visited,
+#list a,
+#list a:visited {
   color: var(--foot-cl);
   text-decoration: none;
 }
@@ -342,10 +344,8 @@ table th, table td {
 
 #list {
   font-size: 14.5px;
-  color: #444444;
-  font-family: 'M PLUS 1p', sans-serif;
   position: relative;
-  left: 2.25%;
+  padding: 0 4.5%;
 }
 
 .header {
