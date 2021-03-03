@@ -17,8 +17,8 @@
 @font-face {
   font-family: 'M PLUS Rounded 1c';
   font-style: normal;
-  font-weight: 100;
-  src: url("https://raw.githubusercontent.com/momizi06/public_html/main/font/MPLUSRounded1c-Thin.woff") format('woff');
+  font-weight: 200;
+  src: url("https://raw.githubusercontent.com/momizi06/public_html/main/font/mplus-1c-light-sub.woff") format('woff');
   font-display: swap;
 }
 
