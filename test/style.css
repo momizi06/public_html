@@ -1,0 +1,54 @@
+nav {
+  mix-blend-mode: difference;
+  position: fixed;
+  margin-left: 85%;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+}
+
+nav button {
+  margin-top: 10px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+}
+
+nav button span {
+  width: 20px;
+  height: 2.0px;
+  background-color: #fff;
+  position: absolute;
+}
+
+nav button span.top {
+  -webkit-transform: translateY(-6px);
+          transform: translateY(-6px);
+}
+
+nav button span.bottom {
+  -webkit-transform: translateY(6px);
+          transform: translateY(6px);
+}
+
+section {
+  height: 100vh;
+  font-size: 2.0rem;
+  padding: 40px;
+}
+
+section.section1, section.section3 {
+  background-color: #fff;
+  color: #000;
+}
+
+section.section2, section.section4 {
+  background-color: #000;
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */
