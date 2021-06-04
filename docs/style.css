@@ -95,12 +95,13 @@ footer {
   background: var(--foot-bg);
   font-family: "M PLUS 1p", sans-serif;
   text-align: center;
+  color: var(--foot-cl);
 }
 
 footer a, footer a:hover, footer a:visited {
-  color: var(--foot-cl);
   text-decoration: none;
 }
+
 nav {
   display: block;
   position: fixed;
