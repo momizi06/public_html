@@ -2,15 +2,13 @@
   var $nav   = $('#navArea');
   var $btn   = $('.toggle_btn');
   var $mask  = $('#mask');
-  var open   = 'open'; // class
+  var open   = 'open';
   // menu open close
   $btn.on( 'click', function() {
     if ( ! $nav.hasClass( open ) ) {
       $nav.addClass( open );
-   // $("#top_btn").fadeOut();
     } else {
       $nav.removeClass( open );
-   // $("#top_btn").fadeIn();
     }
   });
   // mask close
