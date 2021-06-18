@@ -1,24 +1,75 @@
 <!DOCTYPE html>
 <html lang="ja">
     <head>
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width" />
-        <title>改装中</title>
-
-        <style>
-            body {
-                background: #eee;
-                color: #333;
-            }
-            a {
-                color: #555;
-                text-decoration: none;
-            }
-        </style>
+        <title>期末テスト 範囲</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     </head>
 
     <body>
-        <h1>改装中</h1>
-        <p>ただいま改装中です。もしも1学年期末テストの範囲を見に来た方は、<a href="https://175ff3a1.public-html.pages.dev">ここ</a>に移動しました。</p>
+        <div id="navArea">
+            <nav>
+                <div class="inner">
+                    <p>目次</p>
+                    <ul>
+                        <li><a href="#koten">古典B</a></li>
+                        <li><a href="#genbun">現代文B</a></li>
+                        <li><a href="#buturi">物理基礎</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="toggle_btn">
+                <div class="toggle_bg">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+            <div id="mask"></div>
+        </div>
+
+        <div class="wrapper">
+            <header>
+                <h1>二年六組　一学期期末テスト範囲</h1>
+                <p><code>last update:2021/06/18(Beta)</code></p>
+            </header>
+
+            <main>
+                <section class="contents_inner">
+                    <h3 style="text-align: center;">注意</h3>
+                    <p style="margin: 0 0 0 0;">情報はあくまで暫定的なものであり、いとも容易く変更されます。</p>
+                </section>
+
+                <br><br>
+                
+                <section class="contents__inner">
+                    <h3 id="koten">古典B(未確定)</h3>
+                    <p><b>姥捨, 安元の大火</b>, (未確定)<b>戦勝於朝廷(漢文)</b></p>
+                </section>
+                
+                <section class="contents__inner">
+                    <h3 id="genbun">現代文B(未確定)</h3>
+                    <p><b>消費されるスポーツ, 俳句</b></p>
+                </section>
+                
+                <section class="contents__inner">
+                    <h3 id="buturi">物理基礎</h3>
+                    <p>プリント<b>No.13~29</b></p>
+                </section>
+            </main>
+
+            <footer>
+                <p><a href="https://github.com/momizi06/public_html/">GitHub</a><br>
+                Favicon is Emoji Powered by <a href="https://twemoji.twitter.com/">Twemoji</a>, used under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></p>
+            </footer>
+
+        </div>
+
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>

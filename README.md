@@ -23,6 +23,9 @@
 iOS,Windows間とかでの受け渡しに使う
 
 ## ライセンスについて
-このリポジトリ内のコードはすべてMITライセンスの元頒布されています。
+このリポジトリ内のコードのうちHTML,CSS,JavaScriptはすべてMITライセンスの元頒布されています。
 ご自由にお使いください。
-また、M+ FONT,Noto Sans JPについてはOFLライセンスのもと、サブセット化したものを使用しています。 こちらはLICENSEファイルを読んだうえでお使いください。
+また、M+ FONT,Noto Sans JPについてはOFLライセンスのもと、サブセット化したものを使用しています。 
+favicon.icoは[Twemoji](https://twemoji.twitter.com/)を[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)のもと改変したものを使用しています。
+
+こちらはLICENSEファイルを読んだうえでお使いください。

@@ -1,0 +1,233 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 700;
+  src: url("https://raw.githubusercontent.com/momizi06/public_html/main/font/NotoSansJP-Bold.woff") format('woff');
+  font-display: swap;
+}
+  
+@font-face {
+  font-family: 'M PLUS 1p';
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://raw.githubusercontent.com/momizi06/public_html/main/font/mplus-1p-sub.woff") format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'M PLUS Rounded 1c';
+  font-style: normal;
+  font-weight: 300;
+  src: url("https://raw.githubusercontent.com/momizi06/public_html/main/font/mplus-1c-light-sub.woff") format('woff');
+  font-display: swap;
+}
+
+:root {
+  --main-cl: #444444;
+  --foot-cl: #666;
+  --body-bg: #fff;
+  --main-bg: #f5f5f5;
+  --foot-bg: #fff;
+  --nav-bg:  #ffffff;
+  --nav-in:  #333;
+  --nav-ul:  1px solid #333;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main-cl: #ddd;
+    --foot-cl: #888;
+    --body-bg: #000;
+    --main-bg: #222;
+    --foot-bg: #111;
+    --nav-bg:  #222;
+    --nav-in:  #aaa;
+    --nav-ul:  1px solid #999;
+  }
+}
+
+body {
+  background: var(--body-bg);
+}
+
+.wrapper {
+  position: relative;
+  font-size: 17px;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  z-index: 2;
+  margin: 0 1vw 0 1vw;
+}
+
+header {
+  padding: 7vh 2vw;
+  background: #161616;
+  color: #fff;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 24px;
+  font-family: "Noto Sans JP", sans-serif ;
+}
+
+header code {
+  font-family: "M PLUS Rounded 1c", monospace;
+}
+
+main {
+  padding: 10vh 2vw 10vh 5vw;
+  background: var(--main-bg);
+  color: var(--main-cl);
+  font-family: 'M PLUS 1p', serif;
+}
+main h3 {
+  font-size: 20px;
+}
+
+main p {
+  margin: 0 0 0 2vw;
+}
+
+footer {
+  padding: 7vh 0;
+  background: var(--foot-bg);
+  font-family: "M PLUS 1p", sans-serif;
+  text-align: center;
+  color: var(--foot-cl);
+}
+
+footer a, footer a:hover, footer a:visited {
+  text-decoration: none;
+  color: var(--foot-cl);
+}
+
+nav {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: -300px;
+  bottom: 0;
+  width: 300px;
+  background: var(--nav-bg);
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  transition: all .5s;
+  z-index: 4;
+  opacity: 0;
+  font-family: 'M PLUS 1p', sans-serif;
+}
+.open nav {
+  left: 0;
+  opacity: 1;
+}
+nav .inner {
+  padding: 25px;
+}
+nav .inner ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav .inner p {
+  color: var(--nav-in);
+}
+nav .inner li {
+  position: relative;
+  margin: 0;
+  border-bottom: var(--nav-ul);
+}
+nav .inner ul li a {
+  display: block;
+  color: var(--nav-in);
+  font-size: 14px;
+  padding: 1em;
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
+nav .inner ul li a:hover {
+  background: #e4e4e4;
+}
+@media screen and (max-width: 767px) {
+  nav {
+    left: -220px;
+    width: 220px;
+  }
+}
+
+/*============
+.toggle_btn
+=============*/
+.toggle_btn {
+  display: block;
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  width: 30px;
+  height: 30px;
+  transition: all .5s;
+  cursor: pointer;
+  mix-blend-mode: difference;
+  z-index: 4;
+}
+
+.toggle_bg {
+  background-color: transparent;
+}
+
+.toggle_btn span {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background-color: #fff/*var(--btn-bg)*/;
+  border-radius: 4px;
+  transition: all .5s;
+}
+.toggle_btn span:nth-child(1) {
+  top: 4px;
+}
+.toggle_btn span:nth-child(2) {
+  top: 14px;
+}
+.toggle_btn span:nth-child(3) {
+  bottom: 4px;
+}
+.open .toggle_btn span {
+  background-color: #fff;
+  mix-blend-mode: normal;
+}
+.open .toggle_btn span:nth-child(1) {
+  -webkit-transform: translateY(10px) rotate(-315deg);
+  transform: translateY(10px) rotate(-315deg);
+}
+.open .toggle_btn span:nth-child(2) {
+  opacity: 0;
+}
+.open .toggle_btn span:nth-child(3) {
+  -webkit-transform: translateY(-10px) rotate(315deg);
+  transform: translateY(-10px) rotate(315deg);
+}
+
+/*============
+#mask
+=============*/
+#mask {
+  display: none;
+  transition: all .5s;
+}
+.open #mask {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .8;
+  z-index: 3;
+  cursor: pointer;
+}
