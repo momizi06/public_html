@@ -1,38 +1,38 @@
 @charset "utf-8";
 
 @font-face {
-  font-family: 'Noto Sans JP';
+  font-family: "Noto Sans JP";
   font-style: normal;
   font-weight: 700;
-  src: url("https://raw.githubusercontent.com/momizi06/public_html/main/font/NotoSansJP-Bold.woff") format('woff');
-  font-display: swap;
-}
-  
-@font-face {
-  font-family: 'M PLUS 1p';
-  font-style: normal;
-  font-weight: 400;
-  src: url("https://raw.githubusercontent.com/momizi06/public_html/main/font/mplus-1p-sub.woff") format('woff');
+  src: url("https://raw.githubusercontent.com/momizi06/public_html/main/font/NotoSansJP-Bold.woff") format("woff");
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'M PLUS Rounded 1c';
+  font-family: "M PLUS 1p";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://raw.githubusercontent.com/momizi06/public_html/main/font/mplus-1p-sub.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "M PLUS Rounded 1c";
   font-style: normal;
   font-weight: 300;
-  src: url("https://raw.githubusercontent.com/momizi06/public_html/main/font/mplus-1c-light-sub.woff") format('woff');
+  src: url("https://raw.githubusercontent.com/momizi06/public_html/main/font/mplus-1c-light-sub.woff") format("woff");
   font-display: swap;
 }
 
 :root {
-  --main-cl: #444444;
+  --main-cl: #444;
   --foot-cl: #666;
   --body-bg: #fff;
   --main-bg: #f5f5f5;
   --foot-bg: #fff;
-  --nav-bg:  #ffffff;
-  --nav-in:  #333;
-  --nav-ul:  1px solid #333;
+  --nav-bg: #fff;
+  --nav-in: #333;
+  --nav-ul: 1px solid #333;
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -41,9 +41,9 @@
     --body-bg: #000;
     --main-bg: #222;
     --foot-bg: #111;
-    --nav-bg:  #222;
-    --nav-in:  #aaa;
-    --nav-ul:  1px solid #999;
+    --nav-bg: #222;
+    --nav-in: #aaa;
+    --nav-ul: 1px solid #999;
   }
 }
 
@@ -55,7 +55,7 @@ body {
   position: relative;
   font-size: 17px;
   -webkit-transition: all .5s ease;
-  transition: all .5s ease;
+          transition: all .5s ease;
   z-index: 2;
   margin: 0 1vw 0 1vw;
 }
@@ -80,7 +80,7 @@ main {
   padding: 10vh 2vw 10vh 5vw;
   background: var(--main-bg);
   color: var(--main-cl);
-  font-family: 'M PLUS 1p', serif;
+  font-family: "M PLUS 1p", serif;
 }
 main h3 {
   font-size: 20px;
@@ -117,7 +117,7 @@ nav {
   transition: all .5s;
   z-index: 4;
   opacity: 0;
-  font-family: 'M PLUS 1p', sans-serif;
+  font-family: "M PLUS 1p", sans-serif;
 }
 .open nav {
   left: 0;
@@ -145,7 +145,7 @@ nav .inner ul li a {
   font-size: 14px;
   padding: 1em;
   text-decoration: none;
-  transition-duration: 0.2s;
+  transition-duration: .2s;
 }
 nav .inner ul li a:hover {
   background: #e4e4e4;
@@ -202,14 +202,14 @@ nav .inner ul li a:hover {
 }
 .open .toggle_btn span:nth-child(1) {
   -webkit-transform: translateY(10px) rotate(-315deg);
-  transform: translateY(10px) rotate(-315deg);
+          transform: translateY(10px) rotate(-315deg);
 }
 .open .toggle_btn span:nth-child(2) {
   opacity: 0;
 }
 .open .toggle_btn span:nth-child(3) {
   -webkit-transform: translateY(-10px) rotate(315deg);
-  transform: translateY(-10px) rotate(315deg);
+          transform: translateY(-10px) rotate(315deg);
 }
 
 /*============
@@ -230,4 +230,47 @@ nav .inner ul li a:hover {
   opacity: .8;
   z-index: 3;
   cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+  border: solid 1px;
+  display: block;
+  overflow-x: scroll;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+table th, td {
+  border: solid 1px #999;
+}
+
+.fixed01 {
+  position: sticky;
+  left: 0;
+  color: var(--main-cl);
+  background: var(--main-bg);
+}
+.fixed01::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 100%;
+  height: 100%;
+  border: 1px;
+}
+.fixed02 {
+  position: sticky;
+  left: 0;
+  color: var(--main-cl);
+}
+.fixed02::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(0, 0, 0, 0);
 }
